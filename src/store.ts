@@ -6,6 +6,8 @@ Vue.use(Vuex);
 
 const apiUrl = process.env.ROOT_API;
 
+console.log(apiUrl);
+
 export default new Vuex.Store({
   state: {
     token: localStorage.getItem('token') || null,
