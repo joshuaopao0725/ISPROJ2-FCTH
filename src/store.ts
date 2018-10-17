@@ -4,6 +4,8 @@ import axios from 'axios';
 
 Vue.use(Vuex);
 
+const apiUrl = process.env.ROOT_API;
+
 export default new Vuex.Store({
   state: {
     token: localStorage.getItem('token') || null,
@@ -21,7 +23,7 @@ export default new Vuex.Store({
   actions: {
     registerEmployee(context, data) {
       return new Promise((resolve, reject) => {
-        axios.post('/api/user/register',
+        axios.post(apiUrl + '/api/user/register',
         {
           firstName: data.firstName,
           middleName: data.middleName,
@@ -43,7 +45,7 @@ export default new Vuex.Store({
     },
     retrieveToken(context, credentials) {
       return new Promise((resolve, reject) => {
-        axios.post('/api/users/auth/login', {
+        axios.post(apiUrl + '/api/users/auth/login', {
           username: credentials.username,
           password: credentials.password,
         })
