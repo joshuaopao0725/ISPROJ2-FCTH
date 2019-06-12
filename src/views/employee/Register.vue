@@ -64,7 +64,7 @@ export default {
             confirmPassword: null,
             role: null,
             roles: [
-                {identifier: 'AD', text:'Admin'},
+                {identifier: 'AD', text: 'Admin'},
                 {identifier: 'RO', text: 'Reservation Officer'},
                 {identifier: 'FO', text: 'Financial Officer'},
             ],

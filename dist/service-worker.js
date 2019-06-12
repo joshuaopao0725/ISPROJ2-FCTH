@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.fdc462dfdaa7b64bb72ad2b30fcc3a77.js"
+  "/precache-manifest.131ee94b79d24a18bed73a92dcff4c4c.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "flask-vue"});
